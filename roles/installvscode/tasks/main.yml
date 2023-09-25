@@ -1,0 +1,11 @@
+---
+
+- name: Install VS Code
+  apt:
+    deb: "{{ prop_source_vscode }}"
+    state: present
+  vars:
+    ansible_connection: ssh
+    ansible_host: "{{ prop_ipaddress }}"
+  become: true
+

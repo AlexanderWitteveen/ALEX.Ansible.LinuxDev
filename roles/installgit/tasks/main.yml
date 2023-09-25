@@ -1,14 +1,12 @@
 ---
 
-- name: Install xrdp
+- name: Install git
   apt:
-    name: "{{ packages }}"
+    name:
+      - git 
     state: present
     update_cache: yes
   vars:
-    packages:
-    - xrdp 
     ansible_connection: ssh
     ansible_host: "{{ prop_ipaddress }}"
   become: true
-

@@ -1,0 +1,8 @@
+---
+
+- ansible.builtin.include_role:
+    name: alex.linuxdev.installgit
+
+- ansible.builtin.include_role:
+    name: alex.linuxdev.installvscode
+
